@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	margin:0px;
+	padding:0px;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background-color: khaki;
+  }
+  
+  /*Header /blog title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-color: Gold;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: Gray;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*Change color on hover*/
+  .topnav  a :hover {
+    background-color: gray;
+    color: black;
+  }
+  
+  /*Create two unequal colums that float next to each other */
+  /*Left Column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /*Right column */
+  .righcolumn {
+    float: left;
+    width: 25%;
+    background-color: Gray;
+    padding-left: 20px;
+  }
+  
+  /*Fake image */
+  .Fakeimg {
+    background-color: #333;
+    
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles*/
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    height: 100px;
+  }
+  
+  .img{
+  width:100px;
+  height:100px;	
+  }
+  
+  /*Clear floats after the columns */
+  .row :after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+  
+  /*Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 1000px;
+  }
+  
+  /*Responsive layout - when the screen is less than 800px, make the two columns stack on the top of each other instead of the next each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /*Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+/* Style the area of the slides */
+
+#slideshow {
+overflow: auto;
+height: 250px;
+width: 300px;
+margin: 0 auto;
+white-space: nowrap;
+}
+
+/* Style each of the sides with a fixed width and height */
+
+.slide {
+	
+	
+float: left;
+height: 250px;
+width: 300px;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+	width:300px;
+	display:inline-block;
+}
+
+
+
+/* Set the background color of each of the slides */
+
+  .container, .container2 {
+    float: left;
+    background-color: Gold;
+    height: 300px;
+    width: 300px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .content {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    animation: 20s linear 1s myAnimation infinite;
+  }
+  
+   .content2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    animation: 20s linear 1s myAnimation1 infinite;
+  }
+  
+  
+  
+  img {
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+   
+
+/*SCROLL STYLE*/
+
+/*Fake image*/
+.Fakeimg{
+background-color: #333;
+width:100%;
+padding:20px;
+}
+
+/* Add a card effect for articles*/
+.card {
+background-color:Gray;
+padding: 20px;
+margin-top: 20px;
+overflow: auto;
+white-space: nowrap;
+height: 300px;
+}
+
+.card2 {
+background-color:Gray;
+padding: 20px;
+margin-top: 20px;
+overflow: auto;
+white-space: nowrap;
+height: 500px;
+}
+
+/* Clear floats after the columns */
+.row :after {
+content:" ";
+display: table;
+clear: both;
+}
+
+
+ </style>
+</head>
+
+<body>
+	
+<div class="header">
+<h1> Norse Mythology</h1>
+<p> Resize the browser window to see the effect</p>
+</div>
+  
+<div class="topnav">
+<a href="#"> Link </a>
+<a href="#"> Link </a>
+<a href="#"> Link </a>
+        <a href="#" style="float:right"> Link </a>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5> Title Description, Dec. 17, 2017 </h5>
+     
+ 
+ 
+      <p>Some text...</p>
+  </div>
+  
+  <div class="card2">
+    <h2> TITLE HEADING</h2>
+    <h5>Title description, Sep. 12, 2017</h5>
+<div class="container">
+  <div class="content">
+    <img src="Norse 1.jpeg">
+    <img src="Norse 2.jpeg">
+    <img src="Norse 3.jpeg">
+    <img src="Norse 4.jpeg">
+    </div>
+  
+</div>
+
+
+
+</div> 
+</div> 
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+  
+      <h2>About Me</h2>
+     <div class="fakeimg" style="height:100px;"> Image </div>
+     <p>Some text about me</p>
+  </div>
+
+
+   <div class="card2">
+
+    <h3>Popular Post</h3>
+      	<div class="container2">
+      <div class="content2">
+    <p>Thor</p><img src="Thor.jpeg" class="img" style="height:200px; width: 150px;">
+    <p>Odin</p><img src="Odin.jpeg" class="img" style="height:200px;width: 150px;">
+     <p>Freya</p><img src="Freya.jpeg" class="img" style="height:200px;width: 150px;">
+        <p>Loki</p><img src="Loki.jpeg" class="img" style="height:200px;width: 150px;">
+      </div>
+      </div>
+      
+  
+  <div class="card">
+    <h3>Follow Me</h3>
+    <p>Some text... </p>
+      </div>
+        </div>
+          </div>
+          
+     <p>Some text.. </p>         
+          
+  <div class="footer">
+    <h2>Footer </h2>
+  </div>
+
+</body>
+</html>
